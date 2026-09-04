@@ -8,10 +8,11 @@ class wristwear:
 
 
 class watch(wristwear):
-    def __init__(self, brand: str):
+    def __init__(self, brand: str, price):
         super().__init__(price)
-        self.brand =brand
+        self.brand = brand
 
 a = wristwear(100)
 print(a.price)
-b = watch("rolex")
+b = watch(100, "rolex")
+print(b.price)
